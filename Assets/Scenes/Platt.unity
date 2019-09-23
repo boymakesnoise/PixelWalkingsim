@@ -1639,6 +1639,62 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &474596380
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 474596382}
+  - component: {fileID: 474596381}
+  m_Layer: 0
+  m_Name: AudioManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &474596381
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 474596380}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f7797e3ab490de244b1b7724394191a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sounds:
+  - name: Skott
+    clip: {fileID: 8300000, guid: 626ff0c03083dc944a703a83cc7bba5e, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Music12
+    clip: {fileID: 8300000, guid: 3418cdc6b7fb17840b2f60e6e4320c3d, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
+--- !u!4 &474596382
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 474596380}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 124.16116, y: 49.948357, z: 32.808678}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &492976682
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6655,10 +6711,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1124517338}
     m_Modifications:
-    - target: {fileID: 100000, guid: 938f727ebe2097b41b4316b1b5d89069, type: 3}
-      propertyPath: m_Name
-      value: treeStump
-      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 938f727ebe2097b41b4316b1b5d89069, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.72
@@ -6702,6 +6754,10 @@ PrefabInstance:
     - target: {fileID: 400000, guid: 938f727ebe2097b41b4316b1b5d89069, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 938f727ebe2097b41b4316b1b5d89069, type: 3}
+      propertyPath: m_Name
+      value: treeStump
       objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: 938f727ebe2097b41b4316b1b5d89069, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -8231,10 +8287,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 468099281}
     m_Modifications:
-    - target: {fileID: 100000, guid: 7dc8c408cf9eedb42bdd617a5b33750a, type: 3}
-      propertyPath: m_Name
-      value: rockGroup03 (1)
-      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7dc8c408cf9eedb42bdd617a5b33750a, type: 3}
       propertyPath: m_LocalPosition.x
       value: -26.363266
@@ -8278,6 +8330,10 @@ PrefabInstance:
     - target: {fileID: 400000, guid: 7dc8c408cf9eedb42bdd617a5b33750a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 7dc8c408cf9eedb42bdd617a5b33750a, type: 3}
+      propertyPath: m_Name
+      value: rockGroup03 (1)
       objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: 7dc8c408cf9eedb42bdd617a5b33750a, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -9090,10 +9146,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 468099281}
     m_Modifications:
-    - target: {fileID: 100000, guid: 7dc8c408cf9eedb42bdd617a5b33750a, type: 3}
-      propertyPath: m_Name
-      value: rockGroup03
-      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7dc8c408cf9eedb42bdd617a5b33750a, type: 3}
       propertyPath: m_LocalPosition.x
       value: -29.903267
@@ -9137,6 +9189,10 @@ PrefabInstance:
     - target: {fileID: 400000, guid: 7dc8c408cf9eedb42bdd617a5b33750a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 7dc8c408cf9eedb42bdd617a5b33750a, type: 3}
+      propertyPath: m_Name
+      value: rockGroup03
       objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: 7dc8c408cf9eedb42bdd617a5b33750a, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -9229,11 +9285,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 824560313}
     m_Modifications:
-    - target: {fileID: 8426817447372838641, guid: 1a03ca89d4ee2744a8e980669fe5de62,
-        type: 3}
-      propertyPath: m_Name
-      value: Road
-      objectReference: {fileID: 0}
     - target: {fileID: 8426817447372838645, guid: 1a03ca89d4ee2744a8e980669fe5de62,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -9288,6 +9339,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8426817447372838641, guid: 1a03ca89d4ee2744a8e980669fe5de62,
+        type: 3}
+      propertyPath: m_Name
+      value: Road
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1a03ca89d4ee2744a8e980669fe5de62, type: 3}

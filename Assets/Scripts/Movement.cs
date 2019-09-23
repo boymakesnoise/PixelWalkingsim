@@ -17,6 +17,8 @@ public class Movement : MonoBehaviour
     void Start() {
         controller = GetComponent<CharacterController>();
         anim = GetComponent<Animator>();
+
+        FindObjectOfType<AudioManager>().Play("Skott");
     }
     void Update() {
         float speed = (Input.GetKey(KeyCode.LeftShift) ? runSpeed : walkSpeed);
