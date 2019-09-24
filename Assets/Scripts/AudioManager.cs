@@ -18,6 +18,10 @@ public class AudioManager : MonoBehaviour {
     }
 
     private void Start() {
+        Invoke("PlayMusic", 1.5f);
+    }
+
+    private void PlayMusic() {
         Play("Music1");
     }
 
