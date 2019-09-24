@@ -8,18 +8,16 @@ public class Movement : MonoBehaviour
     private Vector3 moveDirection = Vector3.zero;
     private CharacterController controller;
     private Animator anim;
-
+    
     public float walkSpeed = 1.2f;
     public float runSpeed = 7.5f;
     public float rotSpeed = 0.001f;
-    //public float rotX;
 
     void Start() {
         controller = GetComponent<CharacterController>();
         anim = GetComponent<Animator>();
-
-        FindObjectOfType<AudioManager>().Play("Skott");
     }
+
     void Update() {
         float speed = (Input.GetKey(KeyCode.LeftShift) ? runSpeed : walkSpeed);
         

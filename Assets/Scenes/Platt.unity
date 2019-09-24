@@ -3781,6 +3781,7 @@ GameObject:
   - component: {fileID: 1345212794}
   - component: {fileID: 867780762}
   - component: {fileID: 867780760}
+  - component: {fileID: 867780764}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -3854,6 +3855,27 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &867780764
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 867780759}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 386418c3b7aa3824bb3c0890a8ee2f21, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  blod: {fileID: 9133626948389469998, guid: d475222364e78c045b369017a3ec0b75, type: 3}
+  nrOfDrops: 15
+  spread: 0.8
+  sizeMin: 0.01
+  sizeMax: 0.2
+  dripNrOfDrops: 10
+  dripSpread: 0.5
+  dripSizeMin: 0.01
+  dripSizeMax: 0.1
 --- !u!1 &867780765
 GameObject:
   m_ObjectHideFlags: 0
