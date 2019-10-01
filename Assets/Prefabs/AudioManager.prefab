@@ -45,8 +45,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sounds:
   - name: Skott
-    clip: {fileID: 8300000, guid: 626ff0c03083dc944a703a83cc7bba5e, type: 3}
-    volume: 0.563
+    clip: {fileID: 8300000, guid: f7493447bc6c51641839daf3cf17c3be, type: 3}
+    volume: 0.545
     pitch: 1
     loop: 0
     source: {fileID: 0}
@@ -58,6 +58,12 @@ MonoBehaviour:
     source: {fileID: 0}
   - name: TitleMusic
     clip: {fileID: 8300000, guid: c4d8a68a9383cee4ea94ba95f52d185e, type: 3}
+    volume: 0.258
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Cocking
+    clip: {fileID: 8300000, guid: f9312701c4e610b468037f7a4ed2f5f8, type: 3}
     volume: 0.258
     pitch: 1
     loop: 0

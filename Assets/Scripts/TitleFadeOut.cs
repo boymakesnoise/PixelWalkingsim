@@ -25,7 +25,13 @@ public class TitleFadeOut : MonoBehaviour
         if (Input.GetKeyDown("space") && canPressSubmit) {
             canPressSubmit = false;
             StartCoroutine(Fading());
+
+            Invoke("PlayCocking", 3.5f);
         }
+    }
+
+    private void PlayCocking() {
+        FindObjectOfType<AudioManager>().Play("Cocking");
     }
 
     IEnumerator Fading() {
