@@ -1671,13 +1671,13 @@ MonoBehaviour:
   sounds:
   - name: Skott
     clip: {fileID: 8300000, guid: 626ff0c03083dc944a703a83cc7bba5e, type: 3}
-    volume: 0.719
+    volume: 0.563
     pitch: 1
     loop: 0
     source: {fileID: 0}
   - name: Music1
     clip: {fileID: 8300000, guid: a31324730707a924bbc3526db470adc1, type: 3}
-    volume: 0.337
+    volume: 0.263
     pitch: 1
     loop: 1
     source: {fileID: 0}

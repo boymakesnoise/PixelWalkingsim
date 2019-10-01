@@ -6,8 +6,19 @@ public class AudioManager : MonoBehaviour {
 
     public Sound[] sounds;
 
-    void Awake()
-    {
+    public static AudioManager instance;
+
+    void Awake() {
+
+        if (instance == null) {
+            instance = this;
+        } else {
+            Destroy(gameObject);
+            return;
+        }
+
+        DontDestroyOnLoad(gameObject);
+
         foreach (Sound s in sounds) {
             s.source = gameObject.AddComponent<AudioSource>();
             s.source.clip = s.clip;
@@ -18,7 +29,7 @@ public class AudioManager : MonoBehaviour {
     }
 
     private void Start() {
-        Invoke("PlayMusic", 1.5f);
+        Invoke("PlayMusic", 3f);
     }
 
     private void PlayMusic() {
