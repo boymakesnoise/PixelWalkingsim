@@ -14,7 +14,7 @@ public class GameMode : MonoBehaviour {
     
 
     private void Start() {
-        Invoke("PlayMusic", 3f);
+        //Invoke("PlayMusic", 3f);
         FindObjectOfType<AudioManager>().Play("Skott");
         FindObjectOfType<AudioManager>().Play("AmbienceDark");
     }
