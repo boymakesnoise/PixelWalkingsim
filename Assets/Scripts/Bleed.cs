@@ -19,7 +19,7 @@ public class Bleed : MonoBehaviour
 
     void Start()
     {
-        FindObjectOfType<AudioManager>().Play("Skott");
+        
 
         // Spawn first blood -----------------------------------------------------------
         // Set rotation and align with floor height

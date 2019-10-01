@@ -12,6 +12,14 @@ public class TitleFadeOut : MonoBehaviour
 
     private bool canPressSubmit = true;
 
+    private void Start() {
+        Invoke("PlayMusic", 3f);
+    }
+
+    private void PlayMusic() {
+        FindObjectOfType<AudioManager>().Play("TitleMusic");
+    }
+
     void Update()
     {
         if (Input.GetKeyDown("space") && canPressSubmit) {

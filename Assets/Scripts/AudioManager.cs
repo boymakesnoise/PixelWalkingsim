@@ -28,15 +28,6 @@ public class AudioManager : MonoBehaviour {
         }
     }
 
-
-    private void Start() {
-        Invoke("PlayMusic", 3f);
-    }
-
-    private void PlayMusic() {
-        FindObjectOfType<AudioManager>().Play("TitleMusic");
-    }
-
     public void Play (string name) {
         Sound s = Array.Find(sounds, sound => sound.name == name);
         if (s == null) {
