@@ -8028,7 +8028,7 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 60
+  field of view: 100
   orthographic: 0
   orthographic size: 36
   m_Depth: -1
@@ -8074,7 +8074,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 867780759}
-  cameraHeight: 20
+  cameraHeight: 12
 --- !u!4 &1765770431 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 495554, guid: 658fc03792b0f3e419a7b07c4c81feef,
