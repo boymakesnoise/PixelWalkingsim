@@ -583,6 +583,68 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!1 &397001089
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 397001091}
+  - component: {fileID: 397001090}
+  m_Layer: 0
+  m_Name: AudioManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &397001090
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 397001089}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f7797e3ab490de244b1b7724394191a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sounds:
+  - name: Skott
+    clip: {fileID: 8300000, guid: 626ff0c03083dc944a703a83cc7bba5e, type: 3}
+    volume: 0.563
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Music1
+    clip: {fileID: 8300000, guid: a31324730707a924bbc3526db470adc1, type: 3}
+    volume: 0.263
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
+  - name: TitleMusic
+    clip: {fileID: 8300000, guid: c4d8a68a9383cee4ea94ba95f52d185e, type: 3}
+    volume: 0.258
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+--- !u!4 &397001091
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 397001089}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 124.16116, y: 49.948357, z: 32.808678}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &511951239
 GameObject:
   m_ObjectHideFlags: 0

@@ -28,12 +28,13 @@ public class AudioManager : MonoBehaviour {
         }
     }
 
+
     private void Start() {
         Invoke("PlayMusic", 3f);
     }
 
     private void PlayMusic() {
-        Play("Music1");
+        FindObjectOfType<AudioManager>().Play("TitleMusic");
     }
 
     public void Play (string name) {

@@ -11,6 +11,16 @@ public class GameMode : MonoBehaviour {
         Screen.SetResolution(512, 288, false);
     }
 
+    
+
+    private void Start() {
+        Invoke("PlayMusic", 3f);
+    }
+
+    private void PlayMusic() {
+        FindObjectOfType<AudioManager>().Play("Music1");
+    }
+
     void Update() {
         if (Input.GetKey("escape")) {
             Application.Quit();
