@@ -68,3 +68,15 @@ MonoBehaviour:
     pitch: 1
     loop: 0
     source: {fileID: 0}
+  - name: AmbienceDark
+    clip: {fileID: 8300000, guid: cea431ad8f069834b8066495b5588336, type: 3}
+    volume: 0.145
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
+  - name: AmbienceLight
+    clip: {fileID: 8300000, guid: b3385a2152e8ab444a2a2c8fd5793c56, type: 3}
+    volume: 0.145
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
