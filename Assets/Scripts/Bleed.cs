@@ -13,6 +13,8 @@ public class Bleed : MonoBehaviour
     public float dripSpread = 0.5f;
     public float dripSizeMin = 0.01f;
     public float dripSizeMax = 0.03f;
+    public float minTime = 0.2f;
+    public float maxTime = 2f;
 
     private GameObject puddle;
 
@@ -40,14 +42,15 @@ public class Bleed : MonoBehaviour
     }
 
     private void Bleeding() {
+        float droppar = dripNrOfDrops + Random.Range(-dripNrOfDrops, dripNrOfDrops/2);
         // Set rotation
         Quaternion vinkel = Quaternion.Euler(90, 0, 0);
-        for (int i = 0; i < dripNrOfDrops; i++) {
+        for (int i = 0; i < droppar; i++) {
             Vector3 blodPositionSpread = transform.position + new Vector3(Random.Range(-dripSpread, dripSpread), 0, Random.Range(-dripSpread, dripSpread));
             puddle = Instantiate(blod, blodPositionSpread, vinkel);
             float dripSize = Random.Range(dripSizeMin, dripSizeMax);
             puddle.transform.localScale = new Vector3(dripSize, dripSize, 1);
         }
-        Invoke("Bleeding", Random.Range(1, 3));
+        Invoke("Bleeding", Random.Range(minTime, maxTime));
     }
 }
