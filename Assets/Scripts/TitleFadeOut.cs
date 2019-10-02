@@ -12,6 +12,12 @@ public class TitleFadeOut : MonoBehaviour
 
     private bool canPressSubmit = true;
 
+    private void Awake() {
+        // Sätter fullskärm och behåller crisp bild även vid 512x288 rez.
+        Screen.SetResolution(1920, 1080, true);
+        Cursor.visible = false;
+    }
+
     private void Start() {
         Invoke("PlayMusic", 3f);
     }

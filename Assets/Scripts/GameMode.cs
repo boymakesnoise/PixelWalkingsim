@@ -8,7 +8,8 @@ public class GameMode : MonoBehaviour {
         // Toggle fullscreen
         //Screen.fullScreen = !Screen.fullScreen;
 
-        Screen.SetResolution(512, 288, false);
+        // Använd detta för att köra i fönster istället:
+        //Screen.SetResolution(512, 288, false);
     }
 
     
