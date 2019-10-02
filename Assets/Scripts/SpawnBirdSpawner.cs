@@ -8,7 +8,9 @@ public class SpawnBirdSpawner : MonoBehaviour
 
     void OnTriggerEnter(Collider other) {
         if (other.gameObject.name == "BirdHitbox") {
-            birdSpawner.SetActive(true);
+            if (birdSpawner != null) {
+                birdSpawner.SetActive(true);
+            }
             FindObjectOfType<AudioManager>().Play("CrowsFlying");
         }
     }
