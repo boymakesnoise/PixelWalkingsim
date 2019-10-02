@@ -15,6 +15,10 @@ public class GameMode : MonoBehaviour {
 
     private void Start() {
         //Invoke("PlayMusic", 3f);
+        Invoke("PlayShotAndAmbience", 0.1f);
+    }
+
+    private void PlayShotAndAmbience() {
         FindObjectOfType<AudioManager>().Play("Skott");
         FindObjectOfType<AudioManager>().Play("AmbienceDark");
     }

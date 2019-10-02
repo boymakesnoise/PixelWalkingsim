@@ -15,6 +15,8 @@ public class BirdSpawning : MonoBehaviour
 
     void Start()
     {
+        Destroy(gameObject, 1f);    //Destroy spawner after 1 second.
+
         // Set rotation
         Quaternion vinkel = Quaternion.Euler(90, 0, 0);
 

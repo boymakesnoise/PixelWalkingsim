@@ -18,6 +18,8 @@ public class RainCollision : MonoBehaviour {
         if (other.gameObject.name == "RainHitbox") {
             //InvokeRepeating("Spawn", delay, delay);
             Invoke("Spawn", delay);
+            FindObjectOfType<AudioManager>().Play("Rain");
+            FindObjectOfType<AudioManager>().Play("Thunder");
         }
     }
 
@@ -32,6 +34,8 @@ public class RainCollision : MonoBehaviour {
     void OnTriggerExit(Collider other) {
         if (other.gameObject.name == "RainHitbox") {
             hasExited = true;
+            FindObjectOfType<AudioManager>().Stop("Rain");
+            FindObjectOfType<AudioManager>().Stop("Thunder");
         }
     }
 

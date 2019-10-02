@@ -80,3 +80,21 @@ MonoBehaviour:
     pitch: 1
     loop: 1
     source: {fileID: 0}
+  - name: CrowsFlying
+    clip: {fileID: 8300000, guid: 967542d6f8174e644a2f5fe506c02f5b, type: 3}
+    volume: 0.052
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Rain
+    clip: {fileID: 8300000, guid: d71973273c44b0f449fb010e6dd5e110, type: 3}
+    volume: 0.13
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
+  - name: Thunder
+    clip: {fileID: 8300000, guid: 53ebc31c9d0025948ab7d6ea5d6a146c, type: 3}
+    volume: 0.13
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
